@@ -171,7 +171,7 @@ public class FruitSlicer extends ApplicationAdapter implements InputProcessor {
 		else if(type>0.88f) item.type = Fruit.Type.EXTRA;
 		else if(type+zorluk>0.78f) item.type = Fruit.Type.BOMB;
 		if(fruitArray.size<15) fruitArray.add(item);
-		else zorluk=zorluk+0.01f;
+		else if(zorluk<0.28) zorluk=zorluk+0.01f;
 
 	}
 	
